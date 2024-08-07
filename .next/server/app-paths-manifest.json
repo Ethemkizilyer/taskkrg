@@ -1,0 +1,4 @@
+{
+  "/(main)/(routes)/dashboard/page": "app/(main)/(routes)/dashboard/page.js",
+  "/(setup)/page": "app/(setup)/page.js"
+}
