@@ -75,7 +75,7 @@ const Content = () => {
     return (
         <div className="p-5 flex gap-5 flex-col w-full h-full overflow-hidden">
             <div className="title flex justify-between">
-                <p className="text-2xl text-[#145389]font-semibold">Frontend Case</p>
+                <p className="text-2xl text-[#145389] font-semibold">Frontend Case</p>
                 <FaFilter />
             </div>
             <div id="categories">

@@ -11,7 +11,7 @@ import { FaFlag,FaPencilAlt,FaPlus } from "react-icons/fa";
 import { FaRegCalendarDays } from "react-icons/fa6";
 import { LuDiamond } from "react-icons/lu";
 import { FiTrash2 } from "react-icons/fi";
-const TaskBox = ({ task,setTasks }) => {
+const TaskCard = ({ task,setTasks }) => {
     const { flags,setBoards } = useData();
     const { user } = useUser();
     const textColors = ['#F38744', '#6941C6', '#067647'];
@@ -61,14 +61,13 @@ const TaskBox = ({ task,setTasks }) => {
     //      endDate: null
     //  })
      }
-console.log("qwewqe flags",flags)
-console.log("qwewqe",newTask)
+
     return (
         <Draggable type="task" data={JSON.stringify(task)}>
             {edit ? 
              <div className="relative">
-            <FaPencilAlt title="Edit" onClick={()=>setEdit(false)} color="yellow" className="w-7 h-7 absolute right-9 top-3 z-50 shadow-sm hover:bg-slate-100 rounded-lg p-1 mr-2" />
-            <FiTrash2 title="Delete" onClick={deleteTask} color="red" className="w-7 h-7 absolute right-3 top-3 z-50 shadow-sm hover:bg-slate-100 rounded-lg p-1" />
+            <FaPencilAlt title="Edit" onClick={()=>setEdit(false)} color="yellow" className="w-7 h-7 absolute right-9 top-3 z-10 shadow-sm hover:bg-slate-100 rounded-lg p-1 mr-2" />
+            <FiTrash2 title="Delete" onClick={deleteTask} color="red" className="w-7 h-7 absolute right-3 top-3 z-10 shadow-sm hover:bg-slate-100 rounded-lg p-1" />
             <div id="task" className="p-1 rounded-lg" onClick={() => openDetails()}>
                 <div className="rounded-lg border border-gray-200 p-3 hover:bg-gray-100">
                     <div className="task-info flex gap-4 flex-col font-medium">
@@ -148,4 +147,4 @@ console.log("qwewqe",newTask)
     )
 }
 
-export default TaskBox;
+export default TaskCard;

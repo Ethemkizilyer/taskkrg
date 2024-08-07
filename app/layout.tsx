@@ -9,9 +9,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="relative font-poppins h-dvh max-w-full">
+      <body className="relative font-poppins h-dvh max-w-full bg-[#F3F6FD]">
         <UserProvider>
-          {/* //INFO: DataProvider wrote after UserProvider because we can get the data with user token. */}
           <DataProvider>
             {children}
           </DataProvider>

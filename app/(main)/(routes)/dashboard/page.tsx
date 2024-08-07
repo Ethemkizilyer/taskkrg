@@ -13,7 +13,7 @@ export default function Page() {
 
   if (!user) router.push("/");
   return (
-    <div className="bg-[#F3F6FD] h-full">
+    <div className="h-full">
       <Header />
       <div className="flex h-full">
         <ShortSidebar />

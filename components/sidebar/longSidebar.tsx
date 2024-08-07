@@ -17,7 +17,7 @@ const LongSidebar = () => {
       setActiveIndex(activeIndex === index ? null : index);
     };
     return (
-        <div className="flex flex-col justify-between bg-white p-5 h-full">
+        <div className="flex flex-col justify-between bg-white p-5 w-[282px]">
             <div className="top flex gap-3 flex-col">
                 <p id="title">Projeler</p>
                 {/* Dragable part */}

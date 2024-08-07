@@ -1,5 +1,5 @@
 import { LuCircleEllipsis } from "react-icons/lu";
-import TaskBox from "./tasks/taskCard";
+import TaskCard from "./tasks/taskCard";
 import { useEffect, useState } from "react";
 import Empty from "@/assets/images/main/card/empty";
 import { useData } from "../providers/dataProvider";
@@ -106,9 +106,9 @@ const [tasks,setTasks]=useState(null)
                 </div>
             </div>
             <div id="card-[#F3F6FD" className="w-full h-full overflow-x-auto overflow-y-auto p-1">
-                {tasks && tasks.map((task) => {
+                {tasks && tasks.map((task,index) => {
                     return (
-                        <TaskBox setTasks={setTasks} task={task} key={task.id} />
+                        <TaskCard setTasks={setTasks} task={task} key={index} />
                     )
                 })}
                 {(!tasks || empty) && (

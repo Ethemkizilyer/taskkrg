@@ -14,7 +14,7 @@ const ShortSidebar=()=>{
         setIsOpen(!isOpen);
     };
     return (
-        <div className="flex flex-col justify-between bg-[#363F72] w-fit text-white px-1 py-5 h-full">
+        <div className="flex flex-col justify-between bg-[#363F72] text-white px-2 py-5">
             <div className="flex gap-3 flex-col">
                 <span className="rounded-lg hover:bg-gray-400 p-3">
                     <Icon />
