@@ -1,14 +1,12 @@
 import Icon from "@/assets/icons/header/Icon";
 import Avatar from "@/SideAvatar.png";
 import Image from "next/image";
-import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { useUser } from "../providers/userProvider";
 
 const ShortSidebar=()=>{
-    const router =useRouter()
     const [isOpen, setIsOpen] = useState(false);
-    const { user, setIsUserLogin, setUser } = useUser();
+    const { setIsUserLogin, setUser } = useUser();
 
     const toggleDropdown = () => {
         setIsOpen(!isOpen);

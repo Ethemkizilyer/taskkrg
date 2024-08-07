@@ -25,14 +25,12 @@ const DataProvider = ({ children }) => {
     const [boards, setBoards] = useState([]);
 
     const { user, isUserLogin } = useUser();
-console.log(user)
     useEffect(() => {
         (async () => {
             setFlags(await GetFlags(user?.token));
             setBoards(await GetBoards(user?.token))
         })()
     }, [isUserLogin])
-console.log("boards",boards)
 
     const values = {
         flags,

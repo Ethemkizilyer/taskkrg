@@ -57,10 +57,8 @@ const [tasks,setTasks]=useState(null)
         const index= array.find((item)=>item.id === newObj.boardId).tasks.findIndex(item => item.code === newObj.code);
     let asd=[]
         if (index !== -1) {
-            // If item with the same code exists, remove it
             array.find((item)=>item.id === newObj.boardId).tasks.filter((item)=>item.code !== newObj.code)
         } else {
-            // If item with the same code does not exist, add new object
            array.find((item)=>item.id === newObj.boardId).tasks.push(newObj);
         }
     

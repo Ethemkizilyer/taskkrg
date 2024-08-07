@@ -8,7 +8,6 @@ import { FaChevronDown,FaRegCircle  } from "react-icons/fa";
 const LongSidebar = () => {
     const { user } = useUser();
 
-    // Ensure that user is defined
     const fullName = user?.fullName || "Guest";
     const email = user?.email || "Not available";
     const [activeIndex, setActiveIndex] = useState(null);
@@ -20,7 +19,6 @@ const LongSidebar = () => {
         <div className="flex flex-col justify-between bg-white p-5 w-[282px]">
             <div className="top flex gap-3 flex-col">
                 <p id="title">Projeler</p>
-                {/* Dragable part */}
                 <div className="project-accordion">
                     <ul>
                         {Array.from({ length: 5 }).map((_, index) => (

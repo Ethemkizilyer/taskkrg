@@ -1,6 +1,5 @@
 "use client";
 
-import { useRouter } from "next/navigation";
 import { createContext, useContext, useState, useEffect } from "react";
 
 type UserContextType = {
@@ -20,7 +19,6 @@ const UserContext = createContext<UserContextType>({
 const UserProvider = ({ children }) => {
     const [isUserLogin, setIsUserLogin] = useState<boolean>(false);
     const [user, setUser] = useState<any>(null);
-    const router = useRouter()
     useEffect(() => {
         const localUser = localStorage.getItem("user");
         if (localUser) {
