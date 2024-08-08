@@ -119,25 +119,25 @@ const [tasks,setTasks]=useState(null)
                                     <input type="text" name="" id="" placeholder="Enter description" value={newTask.description} className="p-2 rounded-lg border-none" onChange={(event) => setNewTask({ ...newTask, description: event.target.value })} />
                                     <label className="" htmlFor="">Select a flag:</label>
                                     <div id="flag-checkboxes" className="flex justify-around w-2/3 py-3">
-                                        <div className={`flex justify-center items-center relative bg-gray-100 rounded-lg border border-gray-200 ${newTask.flagId == 1 ? "bg-orange-100" : ""}`}>
+                                        <div title={flags[0].name} className={`flex justify-center items-center relative bg-gray-100 rounded-lg border border-gray-200 ${newTask.flagId == 1 ? "bg-orange-100" : ""}`}>
                                             <input type="radio" name="flag" id="" value="1" className="appearance-none w-7 h-7 bg-transparent rounded-lg z-10" onClick={(event:any) => setNewTask({ ...newTask, flagId: parseInt(event.target.value) })} />
-                                            <FaFlag title={flags[0].name} color={flags[0].color} strokeWidth={5} className="absolute inset-x-auto inset-y-auto z-0 w-4 h-4" />
+                                            <FaFlag color={flags[0].color} strokeWidth={5} className="absolute inset-x-auto inset-y-auto z-0 w-4 h-4" />
                                         </div>
-                                        <div className={`flex justify-center items-center relative bg-gray-100 rounded-lg border border-gray-200 ${newTask.flagId == 2 ? "bg-orange-100" : ""}`}>
+                                        <div title={flags[1].name} className={`flex justify-center items-center relative bg-gray-100 rounded-lg border border-gray-200 ${newTask.flagId == 2 ? "bg-orange-100" : ""}`}>
                                             <input type="radio" name="flag" id="" value="2" className="appearance-none w-7 h-7 bg-transparent rounded-lg z-10" onClick={(event:any) => setNewTask({ ...newTask, flagId: parseInt(event.target.value) })} />
-                                            <FaFlag title={flags[1].name} color={flags[1].color} strokeWidth={5} className="absolute inset-x-auto inset-y-auto z-0 w-4 h-4" />
+                                            <FaFlag color={flags[1].color} strokeWidth={5} className="absolute inset-x-auto inset-y-auto z-0 w-4 h-4" />
                                         </div>
-                                        <div className={`flex justify-center items-center relative bg-gray-100 rounded-lg border border-gray-200 ${newTask.flagId == 3 ? "bg-orange-100" : ""}`}>
+                                        <div title={flags[2].name} className={`flex justify-center items-center relative bg-gray-100 rounded-lg border border-gray-200 ${newTask.flagId == 3 ? "bg-orange-100" : ""}`}>
                                             <input type="radio" name="flag" id="" value="3" className="appearance-none w-7 h-7 bg-transparent rounded-lg z-10" onClick={(event:any) => setNewTask({ ...newTask, flagId: parseInt(event.target.value) })} />
-                                            <FaFlag title={flags[2].name} color={flags[2].color} strokeWidth={5} className="absolute inset-x-auto inset-y-auto z-0 w-4 h-4" />
+                                            <FaFlag color={flags[2].color} strokeWidth={5} className="absolute inset-x-auto inset-y-auto z-0 w-4 h-4" />
                                         </div>
-                                        <div className={`flex justify-center items-center relative bg-gray-100 rounded-lg border border-gray-200 ${newTask.flagId == 4 ? "bg-orange-100" : ""}`}>
+                                        <div title={flags[3].name} className={`flex justify-center items-center relative bg-gray-100 rounded-lg border border-gray-200 ${newTask.flagId == 4 ? "bg-orange-100" : ""}`}>
                                             <input type="radio" name="flag" id="" value="4" className="appearance-none w-7 h-7 bg-transparent rounded-lg z-10" onClick={(event:any) => setNewTask({ ...newTask, flagId: parseInt(event.target.value) })} />
-                                            <FaFlag title={flags[3].name} color={flags[3].color} strokeWidth={5} className="absolute inset-x-auto inset-y-auto z-0 w-4 h-4" />
+                                            <FaFlag color={flags[3].color} strokeWidth={5} className="absolute inset-x-auto inset-y-auto z-0 w-4 h-4" />
                                         </div>
-                                        <div className={`flex justify-center items-center relative bg-gray-100 rounded-lg border border-gray-200 ${newTask.flagId == 5 ? "bg-orange-100" : ""}`}>
+                                        <div title={flags[4].name} className={`flex justify-center items-center relative bg-gray-100 rounded-lg border border-gray-200 ${newTask.flagId == 5 ? "bg-orange-100" : ""}`}>
                                             <input type="radio" name="flag" id="" value="5" className="appearance-none w-7 h-7 bg-transparent rounded-lg z-10" onClick={(event:any) => setNewTask({ ...newTask, flagId: parseInt(event.target.value) })} />
-                                            <FaFlag title={flags[4].name} color={flags[4].color} strokeWidth={5} className="absolute inset-x-auto inset-y-auto z-0 w-4 h-4" />
+                                            <FaFlag color={flags[4].color} strokeWidth={5} className="absolute inset-x-auto inset-y-auto z-0 w-4 h-4" />
                                         </div>
                                     </div>
                                     <div className="flex  justify-between flex-col">
