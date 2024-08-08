@@ -1,7 +1,7 @@
 "use client";
 
 import { redirect } from "next/navigation";
-import { useUser } from "@/components/contexts/userProvider";
+import { useUser } from "@/components/contexts/userContext";
 
 const Page = () => {
   const { isUserLogin } = useUser();
