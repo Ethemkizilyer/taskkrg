@@ -1,5 +1,5 @@
 import TaskDetail from "@/components/modals/task/taskDetail";
-import { useData } from "@/components/contexts/data";
+import { useData } from "@/components/contexts/dataContext";
 import { useUser } from "@/components/contexts/userContext";
 import DeleteTask from "@/lib/deleteTask";
 import GetBoards from "@/lib/getBoards";

@@ -2,7 +2,7 @@ import Icon from "@/assets/icons/header/Icon";
 import Avatar from "@/assets/images/SideAvatar.png";
 import Image from "next/image";
 import { useState } from "react";
-import { useUser } from "../contexts/user";
+import { useUser } from "../contexts/userContext";
 
 const ShortSidebar=()=>{
     const [isOpen, setIsOpen] = useState(false);

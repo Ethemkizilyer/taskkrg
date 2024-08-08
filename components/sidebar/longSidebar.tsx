@@ -1,7 +1,7 @@
 "use client";
 
 import BarChart from "@/assets/icons/sidebar/long/barChart";
-import { useUser } from "../contexts/user";
+import { useUser } from "../contexts/userContext";
 import { useState } from "react";
 import { FaChevronDown,FaRegCircle  } from "react-icons/fa";
 
