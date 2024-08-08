@@ -2,7 +2,7 @@
 
 import { createContext, useContext, useEffect, useState } from "react"
 
-import { useUser } from "./userProvider";
+import { useUser } from "./userContext";
 import GetFlags from "@/lib/getFlags";
 import GetBoards from "@/lib/getBoards";
 

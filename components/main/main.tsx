@@ -2,7 +2,7 @@
 
 import BoardCard from "./boardCart"
 import { useEffect, useRef, useState } from "react"
-import { useData } from "../providers/dataProvider"
+import { useData } from "../contexts/data"
 import { FaFilter } from "react-icons/fa"
 import { BiLoaderCircle } from "react-icons/bi"
 const Content = () => {

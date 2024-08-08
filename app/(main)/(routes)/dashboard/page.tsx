@@ -4,7 +4,7 @@ import ShortSidebar from "@/components/sidebar/shortSidebar";
 import Header from "@/components/header/header";
 import LongSidebar from "@/components/sidebar/longSidebar";
 import Content from "@/components/main/main";
-import { useUser } from "@/components/providers/userProvider";
+import { useUser } from "@/components/contexts/userProvider";
 import { useRouter } from "next/navigation";
 
 export default function Page() {

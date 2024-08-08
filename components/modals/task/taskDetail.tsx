@@ -9,7 +9,7 @@ import { IoMdRadioButtonOn } from "react-icons/io";
 import { LuCircleEllipsis,LuDiamond } from "react-icons/lu";
 import { FaRegCalendarDays } from "react-icons/fa6";
 import Image from "next/image";
-import Avatar from "@/Avatar.png";
+import Avatar from "@/assets/images/Avatar.png";
 
 const TaskDetail = ({ props }) => {
     const [isCloseButtonClicked, setIsCloseButtonClicked] = useState(false);

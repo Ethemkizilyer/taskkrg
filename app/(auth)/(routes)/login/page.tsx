@@ -2,7 +2,7 @@
 
 import axios from "axios";
 import { useState } from "react"
-import { useUser } from "@/components/providers/userProvider";
+import { useUser } from "@/components/contexts/userProvider";
 import { useRouter } from "next/navigation";
 
 const SignIn = () => {

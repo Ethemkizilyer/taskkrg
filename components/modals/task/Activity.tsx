@@ -1,4 +1,4 @@
-import Avatar from "@/Avatar.png";
+import Avatar from "@/assets/images/Avatar.png";
 import Image from "next/image";
 
 const ActivityCell = () => {

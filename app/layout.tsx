@@ -1,6 +1,6 @@
 import "./globals.css";
-import { UserProvider } from "../components/providers/userProvider";
-import { DataProvider } from "@/components/providers/dataProvider";
+import { UserProvider } from "../components/contexts/user";
+import { DataProvider } from "@/components/contexts/data";
 
 export default function RootLayout({
   children,
